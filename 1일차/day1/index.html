@@ -1,0 +1,110 @@
+<style>
+    #up_tble{
+        width:216px;
+        word-break:break-all;
+        border-radius: 30px 30px 0 0;
+    }
+    #dwn_tble{
+        border-radius: 0 0 30px 30px;
+    }
+    table{
+        background-color: black;
+        color:white;
+    }
+    button{
+        background-color:darkgray;
+        border-radius: 50%;
+        width:50px;
+        height:50px;
+    }
+    #div button{
+        background-color:#F9DC00;
+    }
+    #x button{
+        background-color:#F9DC00;
+    }
+    #mi button{
+        background-color:#F9DC00;
+    }
+    #plus button{
+        background-color:#F9DC00;
+    }
+    #res button{
+        background-color:#F9DC00;
+    }
+    #ac button{
+        background-color: gray;
+    }
+    #pm button{
+        background-color: gray;
+    }
+    #na button{
+        background-color: gray;
+    }
+</style>
+<table>
+    <tr>
+        <table id="up_tble">
+            <tr>
+                <td id="result">0</td>
+            </tr>
+        </table>
+    </tr>
+    <tr> 
+        <table id="dwn_tble">
+            <tr>
+                <td id="ac" onclick="document.getElementById('result').innerHTML='0'"><button>A/C</button></td>
+                <td id="pm"><button>+/-</button></td>
+                <td id="na"><button>%</button></td>
+                <td id="div"><button onclick="document.getElementById('result').innerHTML+='/'">/</button></td>
+            </tr>
+            <tr>
+                <td id="b7"><button onclick="document.getElementById('result').innerHTML+=7">7</button></td>
+                <td id="8"><button onclick="document.getElementById('result').innerHTML+=8">8</button></td>
+                <td id="9"><button onclick="document.getElementById('result').innerHTML+=9">9</button></td>
+                <td id="X"><button onclick="document.getElementById('result').innerHTML+='*'">X</button></td>
+            </tr>
+            <tr>
+                <td id="4"><button onclick="document.getElementById('result').innerHTML+=4">4</button></td>
+                <td id="5"><button onclick="document.getElementById('result').innerHTML+=5">5</button></td>
+                <td id="6"><button onclick="document.getElementById('result').innerHTML+=6">6</button></td>
+                <td id="mi"><button onclick="document.getElementById('result').innerHTML+='-'">-</button></td>
+            </tr>
+            <tr>
+                <td id="1"><button onclick="document.getElementById('result').innerHTML+=1">1</button></td>
+                <td id="2"><button onclick="document.getElementById('result').innerHTML+=2">2</button></td>
+                <td id="3"><button onclick="document.getElementById('result').innerHTML+=3">3</button></td>
+                <td id="plus"><button onclick="document.getElementById('result').innerHTML+='+'">+</button></td>
+            </tr>
+            <tr>
+                <td id="0" colspan='2'><button onclick="document.getElementById('result').innerHTML+=0">0</button></td>
+                <td id="dot"><button onclick="document.getElementById('result').innerHTML+='.'">.</button></td>
+                <td id="res"><button onclick="document.getElementById('result').innerHTML=eval(document.getElementById('result').innerHTML)">=</button></td>
+            </tr>
+        </table>
+    </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
